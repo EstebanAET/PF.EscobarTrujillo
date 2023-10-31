@@ -1,0 +1,28 @@
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.25s ease-in-out; 
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
+  }
+
+  .entry {
+    padding-left: 21%;
+    padding-top: 5%;
+  }
+
+  .container.book {
+    background-color: $color-booking;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.25s ease-in-out; 
+    border-radius: 10px;
+  }
+  .container.book:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); 
+  }
+
+  .check {
+    background-color: $color-booking;
+  }
+  

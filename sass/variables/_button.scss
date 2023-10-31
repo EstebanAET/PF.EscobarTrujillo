@@ -1,0 +1,30 @@
+
+.btn {
+    background-color: $text-color;
+    color: $background-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: $color-fondo-boton;
+    color: $color-texto-boton;
+  
+    &:hover {
+      background-color: $color-fondo-boton-hover;
+    }
+  }
+
+
+.entry-title {
+    transition: color 0.3s; 
+  }
+  
+  .entry-title:hover {
+    color: $color-fondo-boton-hover; 
+    cursor: pointer;
+  }
+

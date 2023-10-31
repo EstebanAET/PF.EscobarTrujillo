@@ -1,3 +1,96 @@
+.btn {
+  background-color: #7b2cbf;
+  color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+.btn-primary {
+  background-color: #9d4edd;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #e74c3c;
+}
+
+.entry-title {
+  transition: color 0.3s;
+}
+
+.entry-title:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.entry {
+  padding-left: 21%;
+  padding-top: 5%;
+}
+
+.container.book {
+  background-color: rgb(255, 217, 210);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease-in-out;
+  border-radius: 10px;
+}
+
+.container.book:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.check {
+  background-color: rgb(255, 217, 210);
+}
+
+nav .navbar-toggler-icon {
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.nav-item a {
+  transition: color 0.3s;
+  color: #e74c3c;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: #5a189a;
+}
+
+h1 {
+  color: #7b2cbf;
+}
+
+h2 {
+  color: #7b2cbf;
+}
+
+h3 {
+  color: #7b2cbf;
+}
+
+h4 {
+  color: #7b2cbf;
+}
+
+h5 {
+  color: #7b2cbf;
+}
+
+h6 {
+  color: #7b2cbf;
+}
 
 /*# sourceMappingURL=style.css.map */

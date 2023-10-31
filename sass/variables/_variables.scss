@@ -1,0 +1,39 @@
+
+$font-family-sans-serif:      'Rubik', sans-serif;
+$font-family-monospace:       'Rubik', sans-serif;
+
+$font-size-root:              null;
+$font-size-base:              1rem; 
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$primary-color: #3498db;
+$secondary-color: #5a189a;
+$text-color: #7b2cbf;
+$background-color: #f0f0f0;
+
+$color-fondo-boton: #9d4edd;
+$color-texto-boton: #ffffff;
+$color-fondo-boton-hover: #e74c3c;
+$color-booking: rgb(255, 217, 210);

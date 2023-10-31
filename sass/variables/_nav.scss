@@ -1,0 +1,17 @@
+
+
+nav 
+
+  .navbar-toggler-icon {
+
+    border-radius: 4px; 
+    padding: 3px; 
+  }
+  
+  .nav-item {
+    a {
+      transition: color 0.3s; 
+        color: $color-fondo-boton-hover; 
+    }
+  }
+  

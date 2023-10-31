@@ -1,0 +1,18 @@
+@import "../sass/variables/variables";
+@import "../sass/variables/button";
+@import "../sass/variables/cards";
+@import "../sass/variables/nav";
+
+*{
+    font-family: $font-family-sans-serif;
+    color: $secondary-color;
+    
+}
+
+h1 {color:$text-color; }
+h2 {color:$text-color; }
+h3 {color:$text-color ; }
+h4 {color:$text-color ; }
+h5 {color:$text-color ; }
+h6 {color:$text-color ; }
+
