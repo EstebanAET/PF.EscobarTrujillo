@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AirKotuku</title>
+    <link rel="icon" type="image/png" href="./assets/Favicon.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./assets/Logo.png" alt="logo" height="70">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/check.html">Check in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/trabaja.html">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container my-1">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="./assets/mockupboeing.jpg" class="d-block w-100" alt="Boeing 787 con el logo de la aerolinea">
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img src="./assets/Atacama.jpg" class="d-block w-100" alt="valle de la luna desierto de atacama">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Torresdelpaine.jpg" class="d-block w-100" alt="parque nacional torres del paine">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Bodegavinos (1).jpg" class="d-block w-100" alt="Bodega vinos reserva">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/capillasdemarmol.jpg" class="d-block w-100" alt="Paseo en kayak por las capillas de marmol">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/santiagodechile.jpg" class="d-block w-100" alt="Santiago de chile atardecer">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/valparaiso.jpg" class="d-block w-100" alt="Valparaíso desde mirador cerro artillería">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Anakena.jpg" class="d-block w-100" alt="moais en isla de pascua">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<section class="container">
+    <div class="container my-5">
+    <h2>Reservar Vuelos</h2>
+    </div>
+    <form>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idaVuelta" id="idaYVuelta" value="idaYVuelta" checked>
+                    <label class="form-check-label" for="idaYVuelta">
+                        Ida y Vuelta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idaVuelta" id="soloIda" value="soloIda">
+                    <label class="form-check-label" for="soloIda">
+                        Solo Ida
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="aeropuertoSalida"><i class="fa-solid fa-plane-departure"></i> Origen</label>
+                <select class="form-select" id="aeropuertoSalida">
+                    <option value="Santiago">Santiago (SCL)</option>
+                    <option value="Madrid">Madrid (MAD)</option>
+                    <option value="NYork">Nueva York (EWR)</option>
+                    <option value="LAngeles">Los Angeles (LAX)</option>
+                    <option value="Miami">Miami (MIA)</option>
+                    <option value="CDMX">CDMX (MEX)</option>
+                    <option value="Bogota">Bogotá (BOG)</option>
+                    <option value="Rio">Rio de Janeiro (GIG)</option>
+                    <option value="SaoPaulo">Sao Paulo (GRU)</option>
+                    <option value="BsAs">Buenos Aires (AEP)</option>
+                    <option value="Lima">Lima (LIM)</option>
+                    <option value="Arica">Arica (ARI)</option>
+                    <option value="Iquique">Iquique (IQQ)</option>
+                    <option value="Antofagasta">Antofagasta (ANF)</option>
+                    <option value="Calama">Calama (CJC)</option>
+                    <option value="Copiapo">Copiapó (CPO)</option>
+                    <option value="Serena">La Serena (LSC)</option>
+                    <option value="Ipascua">Isla de Pascua (IPC)</option>
+                    <option value="Concepcion">Concepción (CCP)</option>
+                    <option value="Temuco">Temuco (ZCO)</option>
+                    <option value="Valdivia">Valdivia (ZAL)</option>
+                    <option value="Osorno">Osorno (ZOS)</option>
+                    <option value="ptoMontt">Puerto Montt (PMC)</option>
+                    <option value="Castro">Castro (MHC)</option>
+                    <option value="Balmaceda">Balmaceda (BBA)</option>
+                    <option value="Natales">Puerto Natales (PNT)</option>
+                    <option value="Parenas">Punta Arenas (PUQ)</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="aeropuertoLlegada"><i class="fa-solid fa-plane-arrival"></i> Destino</label>
+                <select class="form-select" id="aeropuertoLlegada">
+                    <option value="none"></option>
+                    <option value="Madrid">Madrid (MAD)</option>
+                    <option value="NYork">Nueva York (EWR)</option>
+                    <option value="LAngeles">Los Angeles (LAX)</option>
+                    <option value="Miami">Miami (MIA)</option>
+                    <option value="CDMX">CDMX (MEX)</option>
+                    <option value="Bogota">Bogotá (BOG)</option>
+                    <option value="Rio">Rio de Janeiro (GIG)</option>
+                    <option value="SaoPaulo">Sao Paulo (GRU)</option>
+                    <option value="BsAs">Buenos Aires (AEP)</option>
+                    <option value="Lima">Lima (LIM)</option>
+                    <option value="Arica">Arica (ARI)</option>
+                    <option value="Iquique">Iquique (IQQ)</option>
+                    <option value="Antofagasta">Antofagasta (ANF)</option>
+                    <option value="Calama">Calama (CJC)</option>
+                    <option value="Copiapo">Copiapó (CPO)</option>
+                    <option value="Serena">La Serena (LSC)</option>
+                    <option value="Ipascua">Isla de Pascua (IPC)</option>
+                    <option value="Santiago">Santiago (SCL)</option>
+                    <option value="Concepcion">Concepción (CCP)</option>
+                    <option value="Temuco">Temuco (ZCO)</option>
+                    <option value="Valdivia">Valdivia (ZAL)</option>
+                    <option value="Osorno">Osorno (ZOS)</option>
+                    <option value="ptoMontt">Puerto Montt (PMC)</option>
+                    <option value="Castro">Castro (MHC)</option>
+                    <option value="Balmaceda">Balmaceda (BBA)</option>
+                    <option value="Natales">Puerto Natales (PNT)</option>
+                    <option value="Parenas">Punta Arenas (PUQ)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="fechaIda"><i class="fa-solid fa-person-walking-luggage"></i> Ida</label>
+                <input type="date" class="form-control" id="fechaIda">
+            </div>
+            <div class="col-md-6">
+                <label for="fechaVuelta"><i class="fa-solid fa-person-walking-luggage fa-flip-horizontal"></i> Regreso</label>
+                <input type="date" class="form-control" id="fechaVuelta">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="clase"><i class="fa-solid fa-martini-glass"></i> Clase</label>
+                <select class="form-select" id="clase">
+                    <option value="economy">Economy</option>
+                    <option value="premiumEconomy">Premium Economy</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="numAdultos"><i class="fa-solid fa-person"></i><i class="fa-solid fa-person-dress"></i> Adultos</label>
+                <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button" id="restarAdultos">-</button>
+                    <input type="text" class="form-control text-center" id="numAdultos" value="1" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="sumarAdultos">+</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="numNinos"><i class="fa-solid fa-children"></i> Niños</label>
+                <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button" id="restarNinos">-</button>
+                    <input type="text" class="form-control text-center" id="numNinos" value="0" readonly>
+                    <button class="btn btn-outline-secondary" type="button" id="sumarNinos">+</button>
+                </div>
+            </div>
+        </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="viajarConMascotas">
+                        <label class="form-check-label" for="viajarConMascotas">
+                            <i class="fa-solid fa-paw"></i>  Viajar con Mascotas
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <button type="submit" class="btn btn-primary my-3">Reservar</button>
+    </form>
+    </div>
+</section>
+
+
+<section class="container my-5">
+    
+    <div class="container my-5">
+    <h2>
+        ¡Vive el fin de semana!
+        <small class="text-body-secondary">Es el momento para descubrir una nueva aventura</small>
+    </h2>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/Miami.jpg" class="card-img-top" alt="Miami por la noche">
+                <div class="card-body">
+                  <h4 class="card-title">Miami</h4>
+                  <p class="card-text">Descubre Miami, ciudad vibrante con influencia cubana, playas de arenas blancas y arquitectura Art Deco. La Calle Ocho te espera. ¡Vive la experiencia con el cálido sol y aguas turquesas!</p>
+                  <h5 class="card-text">Desde $ 477.525 CLP.</h5>
+                  <p class="card-text">
+                    Tasas incluidas - Vuelo directo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/Bogota.jpg" class="card-img-top" alt="Atardecer de Bogotá">
+                <div class="card-body">
+                  <h4 class="card-title">Bogotá</h4>
+                  <p class="card-text">Bogotá, la capital de Colombia, una mezcla de cultura, historia, negocios y entretenimiento. Vuela con AirKotuku y aprovecha nuestras promociones en vuelos a esta ciudad vibrante.</p>
+                  <h5 class="card-text">Desde $ 171.765 CLP.</h5>
+                  <p class="card-text">
+                    Tasas incluidas - Vuelo directo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/Lima.jpg" class="card-img-top" alt="Circuito mágico del agua en Lima">
+                <div class="card-body">
+                  <h4 class="card-title">Lima</h4>
+                  <p class="card-text">Visita Lima, capital peruana en la costa del Pacífico, con cultura, historia, gastronomía y clima soleado. Vuela con AirKotuku y llega listo para negocios o vacaciones</p>
+                  <h5 class="card-text">Desde $ 106.605 CLP.</h5>
+                  <p class="card-text">
+                    Tasas incluidas - Vuelo directo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/Baires.jpg" class="card-img-top" alt="Buenos Aires decorado de banderas argentinas">
+                <div class="card-body">
+                  <h4 class="card-title">Buenos Aires</h4>
+                  <p class="card-text">Buenos Aires, Argentina: arquitectura antigua y moderna, epicentro cultural con teatro, arte y gastronomía. Vuela con AirKotuku y sumérgete en la cultura latinoamericana.</p>
+                  <h5 class="card-text">Desde $ 97.335 CLP.</h5>
+                  <p class="card-text">
+                    Tasas incluidas - Vuelo directo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="container my-3">
+    <h2>
+        Convierte tu viaje en una experiencia
+        <small class="text-body-secondary">Ofrecemos opciones para un vuelo cómodo y tranquilo.</small>
+    </h2>
+    </div>
+    <div class="container my-5">
+    
+    <div class="card mb-3">       
+        <img src="./assets/Economynacional.jpeg" class="card-img-top" alt="Asientos clase economy vuelos locales">
+        <div class="card-body">
+          <h4 class="card-title">Economy Local</h4>
+          <h5 class="card-title">Airbus A320-200</h5>
+          <p class="card-text">Si viajas en un A330-200, relájate en tu asiento con acolchado ergonómico y fundas para los asientos, distancia entre asientos estándar internacional, reposacabezas de cuero multidireccionales, acceso compartido a enchufes para PC y puertos USB individuales.</p>
+          <p class="card-text"><small class="text-body-secondary">Cada asiento incluye almohada de algodón, manta suave y bebidas (Café, infusiones, agua o jugos)</small></p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img src="./assets/Economy.png" class="card-img-top" alt="Asientos clase economy internacional">
+        <div class="card-body">
+          <h4 class="card-title">Economy Internacional</h4>
+          <h5 class="card-title">Boeing 787-9 Dreamliner</h5>
+          <p class="card-text">En nuestros Dreamliner B787, disfrutarás de un asiento diseñado ergonómicamente para brindar la máxima comodidad. Se ha pensado en todo para satisfacer tus necesidades de viaje: luces ambientales, áreas de almacenamiento e incluso un estante para dispositivos electrónicos personales. Una nueva red para los pies proporciona un soporte adicional y mejora aún más la ergonomía en vuelos largos.</p>
+          <p class="card-text">Disfruta de premiados vinos, aperitivos continuos y menús con ingredientes frescos. Más opciones de comida, porciones grandes y servicio sin interrupciones para que disfrutes tu tiempo como desees.</p>
+          <p class="card-text"><small class="text-body-secondary">Cada asiento Kit de articulos personales y opción de Wi-Fi pago.</small></p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img src="./assets/Premiumeconomy.jpg" class="card-img-top" alt="Asiento clase premium economy">
+        <div class="card-body">
+          <h4 class="card-title">Premium Economy</h4>
+          <h5 class="card-title">Boeing 787-9 Dreamliner</h5>
+          <p class="card-text">El asiento Premium Economy, diseñado para vuelos ultralargos, brinda máxima comodidad con amplio espacio funcional, exclusivo movimiento de reclinación y reposacabezas ergonómico con almohada. El reposapiés rediseñado mejora el descanso.</p>
+          <p class="card-text">Disfruta de premiados vinos, aperitivos continuos y menús con ingredientes frescos. Más opciones de comida, porciones grandes y servicio sin interrupciones para que disfrutes tu tiempo como desees.</p>
+          <p class="card-text"><small class="text-body-secondary">Cada asiento Kit de articulos personales y Wi-Fi gratis.</small></p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img src="./assets/Business.png" class="card-img-top" alt="Asiento clase business">
+        <div class="card-body">
+          <h4 class="card-title">Business</h4>
+          <h5 class="card-title">Boeing 787-9 Dreamliner</h5>
+          <p class="card-text">Viaje cómodamente en nuestra Business Suite, que combina funcionalidad con privacidad y lujo de clase mundial. Los asientos innovadores le permiten reclinar su asiento desde el despegue hasta el aterrizaje, maximizando la oportunidad de descansar en una cama plana. Disfrute de ropa de cama de calidad y una mesa para trabajar.</p>
+          <p class="card-text">Nuestros menús de Business Class ofrecen una selección contemporánea de platos de origen local con énfasis en la variedad. Brindamos la opción de platos ligeros o una experiencia de cena completa en cualquier momento, para que pueda disfrutar sus actividades durante el vuelo.</p>
+          <p class="card-text"><small class="text-body-secondary">Cada asiento Kit de articulos personales, embarque prioritario y Wi-Fi gratis.</small></p>
+        </div>
+    </div>
+    </div>
+    
+
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-centerre4">
+                <img src="./assets/logoinvert.png" alt="Logo" height="70">
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <h6>Síguenos en Redes Sociales</h6>
+                <ul class="list-unstyled list-inline social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" target="_blank" class="btn btn-primary"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://shorturl.at/uKR25" target="_blank" class="btn btn-primary"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://shorturl.at/isuM3" target="_blank" class="btn btn-primary"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                AirKotuku&copy; Santiago de Chile, 2023.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/bae00c4e5b.js" crossorigin="anonymous"></script>
+</body>
+</html>

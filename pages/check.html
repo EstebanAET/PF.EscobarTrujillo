@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Check In</title>
+    <link rel="icon" type="image/png" href="../assets/Favicon.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/Logo.png" alt="logo" height="70">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./check.html">Check in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./trabaja.html">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container my-1">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="../assets/mockupboeing.jpg" class="d-block w-100" alt="Boeing 787 con el logo de la aerolinea">
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img src="../assets/Atacama.jpg" class="d-block w-100" alt="valle de la luna desierto de atacama">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/Torresdelpaine.jpg" class="d-block w-100" alt="parque nacional torres del paine">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/Bodegavinos (1).jpg" class="d-block w-100" alt="Bodega vinos reserva">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/capillasdemarmol.jpg" class="d-block w-100" alt="Paseo en kayak por las capillas de marmol">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/santiagodechile.jpg" class="d-block w-100" alt="Santiago de chile atardecer">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/valparaiso.jpg" class="d-block w-100" alt="Valparaíso desde mirador cerro artillería">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/Anakena.jpg" class="d-block w-100" alt="moais en isla de pascua">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<section class="container my-5">
+<div class="card mb-3" style="max-width: 100%;">
+<div class="row g-0">
+    <div class="col-md-5">
+     <img src="../assets/Totemcheck (1).jpg" class="img-fluid rounded-start" alt="Totem para check in">
+    </div>
+     
+      <div class="col-md-7">
+      <div class="card-body">
+        <div class="col-md-8">
+                    <h1>Check-In AirKotuku</h1>
+            <form>
+                <div class="mb-3">
+                        <label for="nombre" class="form-label"><i class="fa-regular fa-user"></i> Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="mb-3">
+                        <label for="numeroVuelo" class="form-label"><i class="fa-solid fa-plane"></i> Número de vuelo</label>
+                        <input type="text" class="form-control" id="numeroVuelo" placeholder="Número de vuelo" required>
+                </div>
+                <div class="mb-3">
+                        <label for="asiento" class="form-label"><i class="fa-solid fa-receipt"></i> Número de Ticket</label>
+                        <input type="text" class="form-control" id="asiento" placeholder="Número de ticket" required>
+                </div>
+                        <button type="submit" class="btn btn-primary">
+                        <h5>Check-In  <i class="fa-solid fa-check"></i></h5>
+                        </button>
+            </form>
+                    <p>
+                        * Completa el check-in al menos 24 horas antes del vuelo para un embarque sin problemas.
+                    </p>
+        </div>
+      </div>
+      </div>
+    
+</div>
+</div>
+</section>
+<section class="container my-5">
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../assets/descargaapp.jpg" class="img-fluid rounded-start" alt="Smartphone app store">
+      </div>
+      
+
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="container my-5">
+          <h2 class="card-text">¡Descarga nuestra App!</h2>
+          <div>
+          <div class="container my-5">
+          <p class="card-text">
+            <ul>
+                <li>Check in desde la App</li>
+                <li>Estado de tu vuelo</li>
+                <li>Reserva vuelos en pocos pasos</li>
+                <li>Canjea beneficios de Members</li>
+                <li>Recibe ofertas especiales</li>
+                <li>Realiza compras de up-grades para tu vuelo</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-centerre4">
+                <img src="../assets/logoinvert.png" alt="Logo" height="70">
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <h6>Síguenos en Redes Sociales</h6>
+                <ul class="list-unstyled list-inline social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" target="_blank" class="btn btn-primary"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://shorturl.at/uKR25" target="_blank" class="btn btn-primary"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://shorturl.at/isuM3" target="_blank" class="btn btn-primary"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                AirKotuku&copy; Santiago de Chile, 2023.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/bae00c4e5b.js" crossorigin="anonymous"></script>
+</body>
+</html>
